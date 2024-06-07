@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.continer{
+    width: 100%;
+    height: 100vh;
+    background-color: #f2e9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.galleyr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-bax{
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    background-image: url(./photo/rasm1.jpg);
+    background-size: cover;
+    background-position:center;
+    position: relative;
+    transition: width 0.8s;
+
+}
+.img-bax:nth-child(2){
+    background-image: url(./photo/rasm2.jpg);
+    background-position:center;
+}
+.img-bax:nth-child(3){
+    background-image: url(./photo/rasm3.jpg);
+    background-position:center;
+}
+.img-bax:nth-child(4){
+    background-image: url(./photo/rasm4.jpg);
+    background-position:center;
+}
+
+.img-bax h3{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+}
+.img-bax:hover{
+    width: 300px;
+    cursor: pointer;
+}
